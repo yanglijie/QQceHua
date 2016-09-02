@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QQCeHua" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="376"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Ovc-fr-y9Z">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="jU5-AN-w3p" customClass="HomeViewController" customModule="QQCeHua" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CA5-2K-NYZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vIm-Za-DgE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fOa-4G-GzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HOMEVIEW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKM-T5-Kg6">
+                                <rect key="frame" x="165" y="244" width="344" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="eEL-NB-rI1"/>
+                                    <constraint firstAttribute="width" constant="344" id="m7X-Lz-1GL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
+                                <color key="textColor" red="0.16925144789999999" green="1" blue="0.14136265349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UKM-T5-Kg6" firstAttribute="centerY" secondItem="fOa-4G-GzJ" secondAttribute="centerY" id="P2g-fh-gur"/>
+                            <constraint firstItem="UKM-T5-Kg6" firstAttribute="centerX" secondItem="fOa-4G-GzJ" secondAttribute="centerX" id="WkN-UN-81z"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="76J-oG-M2A" appends="YES" id="rfg-FX-tFU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="panGesture" destination="76J-oG-M2A" id="MJ0-sL-5pL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opg-9Q-k4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="76J-oG-M2A"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="389"/>
+        </scene>
+    </scenes>
+</document>
